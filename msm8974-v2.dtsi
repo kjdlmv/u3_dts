@@ -205,8 +205,8 @@
 	};
 
 	qcom,camera@20 {
-		qcom,vdd-cx-supply = <&pm8841_s2>;
-		qcom,vdd-cx-name = "qcom,vdd-cx";
+		/*qcom,vdd-cx-supply = <&pm8841_s2>;
+		qcom,vdd-cx-name = "qcom,vdd-cx";*/
 	};
 
 	qcom,camera@6c {

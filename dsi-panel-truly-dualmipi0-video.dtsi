@@ -19,7 +19,7 @@
 		qcom,mdss-dsi-panel-framerate = <60>;
 		qcom,mdss-dsi-virtual-channel-id = <0>;
 		qcom,mdss-dsi-stream = <0>;
-		qcom,mdss-dsi-panel-width = <1440>;
+		qcom,mdss-dsi-panel-width = <720>;
 		qcom,mdss-dsi-panel-height = <2560>;
 		qcom,mdss-dsi-h-front-porch = <156>;
 		qcom,mdss-dsi-h-back-porch = <44>;
@@ -48,7 +48,7 @@
 		qcom,mdss-dsi-lane-3-state;
 		qcom,mdss-dsi-panel-timings = [cd 34 24 00 64 68 28 38 2a 03
 									04 00];
-		qcom,mdss-dsi-reset-sequence = <1 20>, <0 200>, <1 20>;
+		qcom,mdss-dsi-reset-sequence = <1 200>, <0 200>, <1 20>;
 		qcom,mdss-dsi-t-clk-post = <0x28>;
 		qcom,mdss-dsi-t-clk-pre = <0x27>;
 		qcom,mdss-dsi-bl-max-level = <255>;

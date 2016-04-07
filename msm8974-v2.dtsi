@@ -15,7 +15,8 @@
  * inside this file. However, device definitions should be placed inside the
  * msm8974.dtsi file.
  */
-
+/* effect on *2 */
+ 
 /include/ "msm8974.dtsi"
 
 /include/ "msm-pm8x41-rpm-regulator.dtsi"

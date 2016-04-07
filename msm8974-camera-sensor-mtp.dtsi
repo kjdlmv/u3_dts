@@ -23,6 +23,20 @@
 
 &cci {
 
+	actuator0: qcom,actuator@18 {
+		cell-index = <0>;
+		reg = <0x18>;
+		compatible = "qcom,actuator";
+		qcom,cci-master = <0>;
+	};
+
+	actuator1: qcom,actuator@36 {
+		cell-index = <1>;
+		reg = <0x36>;
+		compatible = "qcom,actuator";
+		qcom,cci-master = <0>;
+	};
+	
 	qcom,camera@6e {
 		qcom,vdd-cx-supply = <&pm8841_s2>;
 		qcom,vdd-cx-name = "qcom,vdd-cx";
@@ -191,20 +205,6 @@
 		qcom,csi-lane-mask = <0x3>;
 		qcom,sensor-position = <1>;
 		qcom,sensor-mode = <1>;
-		qcom,cci-master = <0>;
-	};
-
-	actuator0: qcom,actuator@18 {
-		cell-index = <0>;
-		reg = <0x18>;
-		compatible = "qcom,actuator";
-		qcom,cci-master = <0>;
-	};
-
-	actuator1: qcom,actuator@36 {
-		cell-index = <1>;
-		reg = <0x36>;
-		compatible = "qcom,actuator";
 		qcom,cci-master = <0>;
 	};
 

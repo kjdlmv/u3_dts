@@ -789,7 +789,7 @@
 	qcom,cont-splash-enabled;
 };
 
-&dsi_dual_sharp_video_0 {
+/*&dsi_dual_sharp_video_0 {
 	qcom,cont-splash-enabled;
 };
 
@@ -819,4 +819,4 @@
 
 &dsi_dual_truly_cmd_1 {
 	qcom,cont-splash-enabled;
-};
+};*/

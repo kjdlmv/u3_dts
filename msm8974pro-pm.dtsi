@@ -384,6 +384,6 @@
 		reg = <0xfc428150 0x3200>;
 		qcom,masters = "APSS", "MPSS", "LPSS", "PRONTO";
 		qcom,master-stats-version = <2>;
-		qcom,master-offset = <2560>;*/
-	};
+		qcom,master-offset = <2560>;
+	};*/
 };

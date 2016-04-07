@@ -10,7 +10,9 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-
+/*have no effect on:
+ msm8974-0006.dts*/
+ 
 &soc {
 	led_flash0: qcom,camera-led-flash {
 		cell-index = <0>;
@@ -92,8 +94,8 @@
 	};
 
 	qcom,camera@6e {
-		qcom,vdd-cx-supply = <&pm8841_s2>;
-		qcom,vdd-cx-name = "qcom,vdd-cx";
+		/*qcom,vdd-cx-supply = <&pm8841_s2>;
+		qcom,vdd-cx-name = "qcom,vdd-cx";*/
 		compatible = "qcom,s5k3l1yx";
 		reg = <0x6e>;
 		qcom,slave-id = <0x6e 0x0 0x3121>;

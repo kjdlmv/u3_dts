@@ -196,7 +196,8 @@
 		status = "ok";
 	};
 };
-
+/*have no effect on:
+ msm8974-0006.dts*/
 &cci {
 	
 	qcom,camera@6e {

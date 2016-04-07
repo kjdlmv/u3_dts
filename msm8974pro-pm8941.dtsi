@@ -15,6 +15,7 @@
  * inside this file. However, device definitions should be placed inside the
  * msm8974.dtsi / msm8974pro.dtsi file(s).
  */
+/* Have effect on *29 */
 
 /include/ "msm8974pro.dtsi"
 
@@ -34,7 +35,7 @@
 
 &krait_pdn {
 	qcom,use-phase-switching;
-        qcom,valid-scaling-factor-versions = <0 1 1 0>;
+        /*qcom,valid-scaling-factor-versions = <0 1 1 0>;*/
 
 };
 

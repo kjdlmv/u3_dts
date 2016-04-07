@@ -12,7 +12,7 @@
  */
 /*have no effect on:
  msm8974-0006.dts*/
- 
+
 &soc {
 	led_flash0: qcom,camera-led-flash {
 		cell-index = <0>;
@@ -192,8 +192,8 @@
 	};
 
 	qcom,camera@6c {
-		qcom,vdd-cx-supply = <&pm8841_s2>;
-		qcom,vdd-cx-name = "qcom,vdd-cx";
+		/*qcom,vdd-cx-supply = <&pm8841_s2>;
+		qcom,vdd-cx-name = "qcom,vdd-cx";*/
 		compatible = "qcom,ov2720";
 		reg = <0x6c>;
 		qcom,slave-id = <0x6c 0x300A 0x2720>;

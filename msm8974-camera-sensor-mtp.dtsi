@@ -12,7 +12,7 @@
  */
 /*have no effect on:
  msm8974-0006.dts*/
- /* have effect on *23 */
+ /* have effect on *23, *28 */
 
 &soc {
 	led_flash0: qcom,camera-led-flash {
@@ -139,8 +139,8 @@
 	};
 
     qcom,camera@20 {
-		/*qcom,vdd-cx-supply = <&pm8841_s2>;
-		qcom,vdd-cx-name = "qcom,vdd-cx";*/
+		qcom,vdd-cx-supply = <&pm8841_s2>;
+		qcom,vdd-cx-name = "qcom,vdd-cx";
 		compatible = "qcom,imx135";
 		reg = <0x20>;
 		qcom,slave-id = <0x20 0x0016 0x0135>;
@@ -339,7 +339,7 @@
 		qcom,gpio-vdig = <3>;
 		qcom,gpio-af-pwdm = <4>;
 		qcom,gpio-req-tbl-num = <0 1 2 3 4>;
-		qcom,gpio-req-tbl-flags = <1 0 0 0>;
+		qcom,gpio-req-tbl-flags = <1 0 0 0 0>;
 		qcom,gpio-req-tbl-label = "CAMIF_MCLK",
 					  "CAM_RESET1",
 					  "CAM_STANDBY1",

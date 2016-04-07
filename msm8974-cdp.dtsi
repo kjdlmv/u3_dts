@@ -789,3 +789,38 @@
 	qcom,cont-splash-enabled;
 };
 
+&dsi_dual_sharp_video_0 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_sharp_video_1 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_sharp_cmd_0 {
+	qcom,cont-splash-enabled;
+	linux,phandle = <0x2d>;
+	phandle = <0x2d>;
+};
+
+&dsi_dual_sharp_cmd_1 {
+	qcom,cont-splash-enabled;
+	linux,phandle = <0x2d>;
+	phandle = <0x2d>;
+};
+
+&dsi_dual_truly_video_0 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_truly_video_1 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_truly_cmd_0 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_truly_cmd_1 {
+	qcom,cont-splash-enabled;
+};

@@ -25,7 +25,9 @@
 	};
 
 	qcom,mdss_dsi@fd922800 {
-		qcom,dsi-pref-prim-pan = <&dsi_dual_sharp_video_0>;
+		qcom,dsi-pref-prim-pan = <&dsi_dual_sharp_cmd_0>;
+		qcom,dsi-pref-prim-pan = <&dsi_dual_sharp_cmd_1>;
+
 	};
 
 	qcom,mdss_mdp@fd900000 {
@@ -785,4 +787,36 @@
 
 &dsi_jdi_1080_vid {
        qcom,cont-splash-enabled;
+};
+
+&dsi_dual_sharp_video_0 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_sharp_video_1 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_sharp_cmd_0 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_sharp_cmd_1 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_truly_video_0 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_truly_video_1 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_truly_cmd_0 {
+	qcom,cont-splash-enabled;
+};
+
+&dsi_dual_truly_cmd_1 {
+	qcom,cont-splash-enabled;
 };

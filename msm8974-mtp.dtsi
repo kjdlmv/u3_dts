@@ -25,8 +25,8 @@
 	};
 
 	qcom,mdss_dsi@fd922800 {
-		qcom,dsi-pref-prim-pan = <&dsi_dual_sharp_cmd_0>;
-		qcom,dsi-pref-prim-pan = <&dsi_dual_sharp_cmd_1>;
+		qcom,dsi-pref-prim-pan = <&dsi_dual_sharp_cmd_0>,
+								<&dsi_dual_sharp_cmd_1>;
 
 	};
 

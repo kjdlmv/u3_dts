@@ -278,7 +278,7 @@
 		interrupts = <0 44 0>;
 		vdd-supply = <&gdsc_venus>;
 		qcom,hfi = "venus";
-		qcom,ocmem-size = <524288>; /* 512 * 1024*/
+		qcom,has-ocmem;
 		qcom,max-hw-load = <1216800>; /* 3840 x 2160 @ 30 + 1080p @ 30*/
 	};
 
@@ -411,8 +411,7 @@
 				/*<78 512 800000 1600000>, /* 400 MB/s */
 				<78 512 2048000 4096000>; /* Max. bandwidth */
 		qcom,bus-bw-vectors-bps = <0 400000 20000000 25000000 50000000
-						100000000 200000000 400000000
-						4294967295>;
+						100000000 200000000 4294967295>;
 		qcom,dat1-mpm-int = <42>;
 		status = "disable";
 	};
@@ -795,7 +794,7 @@
 				      30>;
 
 			qcom,cdc-reset-gpio = <&msmgpio 63 0>;
-			/*qcom,cdc-pa-gpio = <&pm8941_gpios 6 0>; */ /*to activate*/
+			qcom,cdc-pa-gpio = <&pm8941_gpios 6 0>;
 			cdc-vdd-buck-supply = <&pm8941_s2>;
 			qcom,cdc-vdd-buck-voltage = <2150000 2150000>;
 			qcom,cdc-vdd-buck-current = <650000>;
@@ -835,15 +834,15 @@
 			qcom,cdc-micbias-ldoh-v = <0x3>;
 			qcom,cdc-micbias-cfilt1-mv = <1800>;
 			qcom,cdc-micbias-cfilt2-mv = <2700>;
-			qcom,cdc-micbias-cfilt3-mv = <2700>;
+			qcom,cdc-micbias-cfilt3-mv = <1800>;
 			qcom,cdc-micbias1-cfilt-sel = <0x0>;
 			qcom,cdc-micbias2-cfilt-sel = <0x1>;
-			qcom,cdc-micbias3-cfilt-sel = <0x2>;
-			qcom,cdc-micbias4-cfilt-sel = <0x2>;
+			qcom,cdc-micbias3-cfilt-sel = <0x0>;
+			qcom,cdc-micbias4-cfilt-sel = <0x0>;
 			qcom,cdc-mclk-clk-rate = <9600000>;
 			qcom,cdc-slim-ifd = "taiko-slim-ifd";
 			qcom,cdc-slim-ifd-elemental-addr = [00 00 A0 00 17 02];
-			qcom,cdc-dmic-sample-rate = <4800000>;
+			qcom,cdc-dmic-sample-rate = <2400000>;
 		};
 	};
 

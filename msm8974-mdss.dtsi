@@ -19,7 +19,7 @@
 		interrupts = <0 72 0>;
 		vdd-supply = <&gdsc_mdss>;
 
-		qcom,max-bandwidth-low-kbps = <2750000>;
+		qcom,max-bandwidth-low-kbps = <2300000>;
 		qcom,max-bandwidth-high-kbps = <3000000>;
 
 		/* Bus Scale Settings */
@@ -74,14 +74,14 @@
 					   0x00021500 0x00021700>;
 
 		qcom,mdss-has-wfd-blk;
-		qcom,vbif-settings = <0x0004 0x00000001>;
-				     /*<0x00D8 0x00000707>,
+		qcom,vbif-settings = <0x0004 0x00000001>,
+				     <0x00D8 0x00000707>,
 				     <0x00F0 0x00000030>,
 				     <0x0124 0x00000001>,
 				     <0x0178 0x00000FFF>,
 				     <0x017C 0x0FFF0FFF>,
 				     <0x0160 0x22222222>,
-				     <0x0164 0x00002222>;*/
+				     <0x0164 0x00002222>;
 		qcom,mdp-settings = <0x02E0 0x000000E9>,
 				    <0x02E4 0x00000055>,
 				    <0x03AC 0xC0000CCC>,
@@ -103,6 +103,8 @@
 		mdss_fb0: qcom,mdss_fb_primary {
 			cell-index = <0>;
 			compatible = "qcom,mdss-fb";
+			qcom,memory-reservation-type = "EBI1";
+			qcom,memory-reservation-size = <0x2000000>;
 			qcom,memblock-reserve = <0x03200000 0x01E00000>;
 		};
 
@@ -125,7 +127,7 @@
 			/*<0xfd922800 0x1f8>,
 			<0xfd922b00 0x2b0>,
 			<0xfdf30000 0x108>;*/
-		reg-names = "dsi_ctrl", "dsi_phy", "mmss_misc_phys";
+		/*reg-names = "dsi_ctrl", "dsi_phy", "mmss_misc_phys";*/
 		vdd-supply = <&pm8941_l22>;
 		vddio-supply = <&pm8941_l12>;
 		vdda-supply = <&pm8941_l2>;
@@ -133,8 +135,8 @@
 		qcom,mdss-mdp = <&mdss_mdp>;
 		qcom,platform-reset-gpio = <&pm8941_gpios 19 0>;
 		qcom,platform-enable-gpio = <&msmgpio 58 0>;
-		qcom,tps-enable-gpio = <&pm8941_gpios 46 0>;
-		/*qcom,iovcc-enable-gpio = <&pm8941 53 0>; //?*/
+		qcom,tps-enable-gpio = <&msmgpio 46 0>;
+		qcom,iovcc-enable-gpio = <&msmgpio 53 0>; //?
 		qcom,platform-te-gpio = <&msmgpio 12 0>;
 		qcom,platform-strength-ctrl = [ff 06];
 		qcom,platform-bist-ctrl = [00 00 b1 ff 00 00];
@@ -187,10 +189,10 @@
 			/*<0xfd922e00 0x1f8>,
 			<0xfd923100 0x2b0>,
 			<0xfdf30000 0x108>;*/
-		reg-names = "dsi_ctrl", "dsi_phy", "mmss_misc_phys";
+		/*reg-names = "dsi_ctrl", "dsi_phy", "mmss_misc_phys";
 		vdd-supply = <&pm8941_l22>;
 		vddio-supply = <&pm8941_l12>;
-		vdda-supply = <&pm8941_l2>;
+		vdda-supply = <&pm8941_l2>;*/
 		qcom,mdss-fb-map = <&mdss_fb0>;
 		qcom,mdss-mdp = <&mdss_mdp>;
 		qcom,platform-strength-ctrl = [ff 06];
@@ -201,7 +203,7 @@
 			00 00 00 00 0a 00 00 01 97
 			00 00 00 00 0f 00 00 01 97
 			00 c0 00 00 00 00 00 01 bb];
-		qcom,platform-supply-entry1 {
+		/*qcom,platform-supply-entry1 {
 				qcom,supply-name = "vdd";
 				qcom,supply-min-voltage = <3000000>;
 				qcom,supply-max-voltage = <3000000>;
@@ -233,7 +235,7 @@
 				qcom,supply-post-on-sleep = <0>;
 				qcom,supply-pre-off-sleep = <0>;
 				qcom,supply-post-off-sleep = <0>;
-		};
+		};*/
 	};
 
 	mdss_hdmi_tx: qcom,hdmi_tx@fd922100 {

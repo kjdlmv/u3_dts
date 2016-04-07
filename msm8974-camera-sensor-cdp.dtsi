@@ -185,10 +185,10 @@
 		reg = <0x0>;
 		qcom,csiphy-sd-index = <0>;
 		qcom,csid-sd-index = <0>;
+		qcom,actuator-src = <&actuator0>;
 		qcom,vdd-cx-supply = <&pm8841_s2>;
 		qcom,mount-angle = <90>;
 		qcom,vdd-cx-name = "qcom,vdd-cx";
-		qcom,actuator-src = <&actuator0>;
 		cam_vdig-supply = <&pm8941_l3>;
 		cam_vana-supply = <&pm8941_l17>;
 		cam_vio-supply = <&pm8941_lvs3>;
@@ -242,9 +242,9 @@
 		qcom,gpio-standby = <2>;
 		qcom,gpio-req-tbl-num = <0 1 2>;
 		qcom,gpio-req-tbl-flags = <1 0 0>;
-		qcom,gpio-req-tbl-label = "CAMIF_MCLK1",
-					  "CAM_RESET1",
-					  "CAM_STANDBY1";
+		qcom,gpio-req-tbl-label = "CAMIF_MCLK",
+					  "CAM_RESET",
+					  "CAM_STANDBY";
 		qcom,sensor-position = <1>;
 		qcom,sensor-mode = <0>;
 		qcom,cci-master = <0>;
@@ -258,6 +258,7 @@
 		qcom,csiphy-sd-index = <2>;
 		qcom,csid-sd-index = <2>;
 		qcom,mount-angle = <90>;
+		qcom,vdd-cx-supply = <&pm8841_s2>;
 		qcom,vdd-cx-name = "qcom,vdd-cx";
 		cam_vdig-supply = <&pm8941_l3>;
 		cam_vana-supply = <&pm8941_l17>;
@@ -269,12 +270,10 @@
 		qcom,cam-vreg-op-mode = <105000 80000 0>;
 		qcom,gpio-no-mux = <0>;
 		gpios = <&msmgpio 17 0>,
-			<&msmgpio 18 0>,
-			<&msmgpio 28 0>;
+			<&msmgpio 18 0>;
 		qcom,gpio-reset = <1>;
-		qcom,gpio-standby = <2>;
-		qcom,gpio-req-tbl-num = <0 1 2>;
-		qcom,gpio-req-tbl-flags = <1 0 0>;
+		qcom,gpio-req-tbl-num = <0 1>;
+		qcom,gpio-req-tbl-flags = <1 0>;
 		qcom,gpio-req-tbl-label = "CAMIF_MCLK",
 					  "CAM_RESET1";
 		qcom,sensor-position = <1>;

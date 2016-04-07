@@ -355,7 +355,7 @@
 	rpm-regulator-ldoa17 {
 		status = "okay";
 		pm8941_l17: regulator-l17 {
-			regulator-min-microvolt = <2850000>;
+			regulator-min-microvolt = <2700000>;
 			regulator-max-microvolt = <2850000>;
 			qcom,init-voltage = <2850000>;
 			status = "okay";

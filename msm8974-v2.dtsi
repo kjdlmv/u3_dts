@@ -199,6 +199,11 @@
 
 &cci {
 
+	qcom,camera@90 {
+		qcom,vdd-cx-supply = <&pm8841_s2>;
+		qcom,vdd-cx-name = "qcom,vdd-cx";
+	};
+	
 	qcom,camera@6e {
 		qcom,vdd-cx-supply = <&pm8841_s2>;
 		qcom,vdd-cx-name = "qcom,vdd-cx";
@@ -220,17 +225,12 @@
 	};
 
 	qcom,camera@1 {
-		qcom,vdd-cx-supply = <&pm8841_s2>;
-		qcom,vdd-cx-name = "qcom,vdd-cx";
+	/*	qcom,vdd-cx-supply = <&pm8841_s2>;
+		qcom,vdd-cx-name = "qcom,vdd-cx";*/
 	};
 
 	qcom,camera@2 {
-		qcom,vdd-cx-supply = <&pm8841_s2>;
-		qcom,vdd-cx-name = "qcom,vdd-cx";
-	};
-
-	qcom,camera@90 {
-		qcom,vdd-cx-supply = <&pm8841_s2>;
-		qcom,vdd-cx-name = "qcom,vdd-cx";
+		/*qcom,vdd-cx-supply = <&pm8841_s2>;
+		qcom,vdd-cx-name = "qcom,vdd-cx";*/
 	};
 };

@@ -9,7 +9,8 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-
+/* +28 */
+ 
 /include/ "msm8974-camera-sensor-mtp.dtsi"
 /include/ "msm8974-leds.dtsi"
 

@@ -26,7 +26,7 @@
 		compatible = "qcom,actuator";
 		qcom,cci-master = <0>;
 	};
-	
+
 	qcom,camera@6e {
 		compatible = "qcom,s5k3l1yx";
 		reg = <0x6e>;
@@ -178,7 +178,7 @@
 		qcom,sensor-mode = <1>;
 		qcom,cci-master = <0>;
 	};
-	
+
 	qcom,camera@0 {
 		cell-index = <0>;
 		compatible = "qcom,camera";
@@ -281,5 +281,4 @@
 		qcom,cci-master = <0>;
 		status = "ok";
 	};
-
 };

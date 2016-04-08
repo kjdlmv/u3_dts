@@ -838,7 +838,7 @@
 			};
 		};
 
-		pma8084_lpg1: pwm@b100 {
+		/*pma8084_lpg1: pwm@b100 {
 			compatible = "qcom,qpnp-pwm";
 			reg = <0xb100 0x100>,
 			      <0xb042 0x7e>;
@@ -884,6 +884,6 @@
 			      <0xb042 0x7e>;
 			reg-names = "qpnp-lpg-channel-base", "qpnp-lpg-lut-base";
 			qcom,channel-id = <5>;
-		};
+		};*/
 	};
 };

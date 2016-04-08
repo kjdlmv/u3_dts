@@ -206,7 +206,7 @@
 	hall-keys {
 		interrupt-parent = <&msmgpio>;
 		interrupts = <54 2>;
-		vdd-supply = <&pm8941_clkdiv3>; /* ??? pm8941_lvs3 ?*/
+		vdd-supply = <&pm8941_lvs3>; /* ???*/
 		compatible = "liujiang,hall_key";
 		label = "key";
 		hall,irq-gpio = <&msmgpio 0x36 0x0>;

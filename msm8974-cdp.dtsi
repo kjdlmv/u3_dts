@@ -10,7 +10,7 @@
  * GNU General Public License for more details.
  */
 /* +*0 */
- 
+
 /include/ "msm8974-leds.dtsi"
 /include/ "msm8974-camera-sensor-cdp.dtsi"
 
@@ -168,23 +168,6 @@
 				regulator-max-microvolt = <1800000>;
 				regulator-max-microamp = <9360>;
 			};
-		};
-	};
-
-	hall-keys {
-		interrupt-parent = <&msmgpio>;
-		interrupts = <54 2>;
-		/*vdd-supply = <&???>;*/
-		compatible = "liujiang,hall_key";
-		label = "key";
-		hall,irq-gpio = <&msmgpio 0x36 0x0>;
-		hall,irq-flags = <2>;
-
-		hall,regulator {
-			regulator-name = "vdd";
-			regulator-min-microvolt = <1800000>;
-			regulator-max-microvolt = <1800000>;
-			regulator-max-microamp = <9360>;
 		};
 	};
 

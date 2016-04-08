@@ -9,7 +9,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
-
+/* +28 */
 &spmi_bus {
 	#address-cells = <1>;
 	#size-cells = <0>;
@@ -198,7 +198,7 @@
 		compatible = "qcom,qpnp-charger";
 		#address-cells = <1>;
 		#size-cells = <1>;
-		status = "disabled";
+		status = "enabled";
 
 		qcom,vddmax-mv = <4360>;
 		qcom,vddsafe-mv = <4380>;

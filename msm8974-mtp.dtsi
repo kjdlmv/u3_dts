@@ -256,8 +256,8 @@
 
 &pm8941_lsid1 {
 	qcom,leds@d800 {
-		status = "okay";
-		qcom,wled_0 {
+		status = "disabled";
+		/*qcom,wled_0 {
 			label = "wled";
 			linux,name = "wled:backlight";
 			linux,default-trigger = "bkl-trigger";
@@ -272,7 +272,7 @@
 			qcom,ovp-val = <2>;
 			qcom,num-strings = <3>;
 			qcom,id = <0>;
-		};
+		};*/
 	};
 
 	qcom,leds@d900 {
@@ -756,7 +756,7 @@
 &slim_msm {
 	taiko_codec {
 		qcom,cdc-micbias1-ext-cap;
-		qcom,cdc-micbias2-ext-cap;
+		/*qcom,cdc-micbias2-ext-cap;*/
 		qcom,cdc-micbias3-ext-cap;
 		qcom,cdc-micbias4-ext-cap;
 	};

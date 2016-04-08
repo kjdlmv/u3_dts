@@ -9,6 +9,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  */
+/* +18? */
 
 /include/ "skeleton.dtsi"
 
@@ -389,7 +390,7 @@
 
 		qcom,pad-pull-on = <0x0 0x3 0x3>; /* no-pull, pull-up, pull-up */
 		qcom,pad-pull-off = <0x0 0x3 0x3>; /* no-pull, pull-up, pull-up */
-		qcom,pad-drv-on = <0x7 0x4 0x4>; /* 10mA, 10mA, 10mA */ //0x4
+		qcom,pad-drv-on = <0x4 0x4 0x4>; /* 10mA, 10mA, 10mA */ //0x4
 		qcom,pad-drv-off = <0x0 0x0 0x0>; /* 2mA, 2mA, 2mA */
 
 		qcom,clk-rates = <400000 20000000 25000000 50000000 100000000 200000000>;
@@ -436,7 +437,7 @@
 
 		qcom,pad-pull-on = <0x0 0x3 0x3>; /* no-pull, pull-up, pull-up */
 		qcom,pad-pull-off = <0x0 0x3 0x3>; /* no-pull, pull-up, pull-up */
-		qcom,pad-drv-on = <0x7 0x4 0x4>; /* 10mA, 10mA, 10mA */ //0x4
+		qcom,pad-drv-on = <0x4 0x4 0x4>; /* 10mA, 10mA, 10mA */ //0x4
 		qcom,pad-drv-off = <0x0 0x0 0x0>; /* 2mA, 2mA, 2mA */
 
 		qcom,clk-rates = <400000 20000000 25000000 50000000 100000000 200000000>;
@@ -848,7 +849,7 @@
 
 	sound {
 		compatible = "qcom,msm8974-audio-taiko";
-		qcom,model = "msm8974-taiko-cdp-snd-card";
+		qcom,model = "msm8974-taiko-snd-card";
 		reg = <0xfe02b000 0x4>,
 		      <0xfe02c000 0x4>,
 		      <0xfe02d000 0x4>,

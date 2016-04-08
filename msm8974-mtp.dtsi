@@ -206,7 +206,7 @@
 	hall-keys {
 		interrupt-parent = <&msmgpio>;
 		interrupts = <54 2>;
-		/*vdd-supply = <&???>;*/
+		vdd-supply = <&pm8941_clkdiv3>; /* ??? pm8941_lvs3 ?*/
 		compatible = "liujiang,hall_key";
 		label = "key";
 		hall,irq-gpio = <&msmgpio 0x36 0x0>;
@@ -437,8 +437,8 @@
 
 		/include/ "batterydata-palladium.dtsi"
 		/include/ "batterydata-mtp-3000mah.dtsi"
-		/include/ "batterydata-lg-ds-2900mah.dtsi"
 		/include/ "batterydata-lg-xwd-2900mah.dtsi"
+		/include/ "batterydata-lg-ds-2900mah.dtsi"
 	};
 };
 
@@ -454,8 +454,9 @@
 
 &pm8941_chg {
 	status = "ok";
-	qcom,charging-disabled;
+	qcom,charging-enabled;
 	qcom,battery-data = <&mtp_batterydata>;
+	qcom,charging-disabled;
 
 	qcom,chgr@1000 {
 		status = "ok";

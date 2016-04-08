@@ -197,7 +197,7 @@
 	hall-keys {
 		interrupt-parent = <&msmgpio>;
 		interrupts = <54 2>;
-		vdd-supply = <&vdd>;
+		/*vdd-supply = <&???>;*/
 		compatible = "liujiang,hall_key";
 		label = "key";
 		hall,irq-gpio = <&msmgpio 0x36 0x0>;
